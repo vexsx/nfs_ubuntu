@@ -15,3 +15,5 @@ chmod +x client-init.sh
 ```
 
 ##  !! Be aware of mount is temporary for perminent mount edit /etc/fstab !!
+
+### Simply keep in mind the IP and pathway of the shared folder you want, and then provide both to the client.
