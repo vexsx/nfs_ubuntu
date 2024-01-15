@@ -47,3 +47,9 @@ exportfs -ar
 systemctl restart nfs-server
 echo "\n"
 echo "NFS server setup is complete. The path $path has been added to /etc/exports."
+
+# Add entry to /etc/fstab for permanent mount
+echo "$path /mnt/nfs nfs defaults 0 0" >> /etc/fstab
+
+echo "\n"
+echo "NFS server setup is complete. The path $path has been added to /etc/exports and /etc/fstab."
